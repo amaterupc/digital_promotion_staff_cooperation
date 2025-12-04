@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardGrid = document.getElementById('cardGrid');
     const searchInput = document.getElementById('searchInput');
     const prefectureSelect = document.getElementById('prefectureSelect');
+    const subCategorySelect = document.getElementById('subCategorySelect');
     const noResults = document.getElementById('noResults');
 
     let companies = [];
@@ -91,6 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
         const selectedPref = prefectureSelect.value;
+        const selectedSubCat = subCategorySelect.value;
+
+        // Show/Hide Sub-category select
+        if (selectedPref === '東京都') {
+            subCategorySelect.classList.remove('hidden');
+        } else {
+            subCategorySelect.classList.add('hidden');
+            subCategorySelect.value = ""; // Reset sub-category when not Tokyo
+        }
 
         const filteredCompanies = companies.filter(company => {
             const matchesSearch = company.name.toLowerCase().includes(searchTerm) ||
@@ -98,7 +108,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 company.url.toLowerCase().includes(searchTerm);
             const matchesPref = selectedPref === '' || company.prefecture === selectedPref;
 
-            return matchesSearch && matchesPref;
+            let matchesSubCat = true;
+            if (selectedPref === '東京都' && selectedSubCat !== '') {
+                const isMunicipality = company.name.startsWith('東京都');
+                if (selectedSubCat === 'municipality') {
+                    matchesSubCat = isMunicipality;
+                } else if (selectedSubCat === 'company') {
+                    matchesSubCat = !isMunicipality;
+                }
+            }
+
+            return matchesSearch && matchesPref && matchesSubCat;
         });
 
         renderCards(filteredCompanies);
@@ -107,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event Listeners
     searchInput.addEventListener('input', filterData);
     prefectureSelect.addEventListener('change', filterData);
+    subCategorySelect.addEventListener('change', filterData);
 
     // Utility to prevent XSS
     function escapeHtml(text) {

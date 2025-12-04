@@ -70,7 +70,8 @@ body {
     transition: var(--transition);
 }
 
-#prefectureSelect {
+#prefectureSelect,
+#subCategorySelect {
     padding: 15px 20px;
     font-size: 1rem;
     border: 2px solid var(--border-color);
@@ -83,7 +84,8 @@ body {
 }
 
 #searchInput:focus,
-#prefectureSelect:focus {
+#prefectureSelect:focus,
+#subCategorySelect:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(0, 94, 182, 0.1);
 }
