@@ -4,42 +4,42 @@ const companyData = [
         "url": "https://www.docomo.ne.jp/",
         "kana": "エヌティティドコモ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "KDDI株式会社",
         "url": "https://www.kddi.com/",
         "kana": "ケイディーディーアイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "ソフトバンク株式会社",
         "url": "https://www.softbank.jp/",
         "kana": "ソフトバンク",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "楽天モバイル株式会社",
         "url": "https://corp.mobile.rakuten.co.jp/",
         "kana": "ラクテンモバイル",
         "prefecture": "東京都",
-        "district": null
+        "district": "世田谷区"
     },
     {
         "name": "全国中小企業青年中央会",
         "url": "https://www.chuokai.or.jp/index.php/bussinesslink/youthchuokai/",
         "kana": "ゼンコクチュウショウキギョウセイネンチュウオウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "中央区"
     },
     {
         "name": "一般財団法人ニューメディア開発協会",
         "url": "https://www2.nmda.or.jp/",
         "kana": "ニューメディアカイハツキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "ネットでeシニア",
@@ -74,49 +74,49 @@ const companyData = [
         "url": "https://www.trans-cosmos.co.jp/",
         "kana": "トランスコスモス",
         "prefecture": "東京都",
-        "district": null
+        "district": "渋谷区"
     },
     {
         "name": "BIPROGY株式会社",
         "url": "https://www.biprogy.com/",
         "kana": "ビプロジー",
         "prefecture": "東京都",
-        "district": null
+        "district": "江東区"
     },
     {
         "name": "一般社団法人日本支援技術協会",
         "url": "https://www.jatc.jp/",
         "kana": "ニホンシエンギジュツキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "NPO法人ブロードバンドスクール協会",
         "url": "https://broadbandschool.jp/",
         "kana": "ブロードバンドスクールキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "富士通株式会社",
         "url": "https://www.fujitsu.com/jp/",
         "kana": "フジツウ",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "一般社団法人ソフトウェア協会",
         "url": "https://www.saj.or.jp/",
         "kana": "ソフトウェアキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "一般社団法人ウェブ解析士協会",
         "url": "https://www.waca.associates/jp",
         "kana": "ウェブカイセキシキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "北海道更別村",
@@ -137,21 +137,21 @@ const companyData = [
         "url": "https://www.pasocoop.org/",
         "kana": "パソコープ",
         "prefecture": "東京都",
-        "district": null
+        "district": "江東区"
     },
     {
         "name": "東京慈恵会医科大学",
         "url": "http://www.jikei.ac.jp",
         "kana": "トウキョウジケイカイイカダイガク",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "NPO法人パソコンサポートの会",
         "url": "https://www.edogawa-pc-support.org/",
         "kana": "パソコンサポートノカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "江戸川区"
     },
     {
         "name": "一色小学校区元気なコミュニティ協議会",
@@ -179,7 +179,7 @@ const companyData = [
         "url": "https://centerfield.co.jp/",
         "kana": "センターフィールド",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "株式会社大垣共立銀行",
@@ -193,14 +193,14 @@ const companyData = [
         "url": "https://mmky310.info/",
         "kana": "タダカヨ",
         "prefecture": "東京都",
-        "district": null
+        "district": "文京区"
     },
     {
         "name": "NPO法人健康・生きがい就労ラボ",
         "url": "https://lifespiceworks.com/",
         "kana": "ケンコウイキガイシュウロウラボ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "株式会社学映システム",
@@ -312,14 +312,14 @@ const companyData = [
         "url": "https://www.shakaihokenroumushi.jp/",
         "kana": "ゼンコクシャカイホケンロウムシカイレンゴウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "中央区"
     },
     {
         "name": "創研情報株式会社",
         "url": "https://www.souken.co.jp/",
         "kana": "ソウケンジョウホウ",
         "prefecture": "東京都",
-        "district": null
+        "district": "品川区"
     },
     {
         "name": "公益社団法人渋谷区シルバー人材センター",
@@ -417,7 +417,7 @@ const companyData = [
         "url": "https://online-sp.localinfo.jp/",
         "kana": "オンラインサポーターマチダ",
         "prefecture": "東京都",
-        "district": null
+        "district": "町田市"
     },
     {
         "name": "NPO法人まちづくり推進隊詫間",
@@ -473,7 +473,7 @@ const companyData = [
         "url": "https://nacs.or.jp",
         "kana": "ニホンショウヒセイカツアドバイザーコンサルタントソウダンインキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "株式会社十八親和銀行",
@@ -487,14 +487,14 @@ const companyData = [
         "url": "https://www.span.jp/index.html",
         "kana": "シカクショウガイシャパソコンアシストネットワーク",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "株式会社EVISION",
         "url": "http://www.evision.co.jp/",
         "kana": "イビジョン",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "公益社団法人浜田市シルバー人材センター",
@@ -508,21 +508,21 @@ const companyData = [
         "url": "https://www.jreast.co.jp/",
         "kana": "ヒガシニホンリョカクテツドウ",
         "prefecture": "東京都",
-        "district": null
+        "district": "渋谷区"
     },
     {
         "name": "株式会社ラック",
         "url": "https://www.lac.co.jp",
         "kana": "ラック",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "NPO法人ITコーディネータ協会",
         "url": "https://www.itc.or.jp/",
         "kana": "アイティーコーディネータキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "中央区"
     },
     {
         "name": "公益社団法人姶良市シルバー人材センター",
@@ -543,7 +543,7 @@ const companyData = [
         "url": "https://www.flaren.co.jp/",
         "kana": "フレアン",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "NPO法人虹志いなべ暮らしの保健室",
@@ -620,14 +620,14 @@ const companyData = [
         "url": "https://www.quest9.jp/",
         "kana": "クエスト",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "一般社団法人おかえり集学校",
         "url": "https://www.shugakko.or.jp/",
         "kana": "オカエリシュウガッコウ",
         "prefecture": "東京都",
-        "district": null
+        "district": "新宿区"
     },
     {
         "name": "北海道留寿都村",
@@ -781,7 +781,7 @@ const companyData = [
         "url": "https://www.forum8.co.jp/",
         "kana": "フォーラムエイト",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "いちかわITインストラクターズ",
@@ -795,14 +795,14 @@ const companyData = [
         "url": "https://www.sp2.or.jp/",
         "kana": "チュウショウキギョウコジンジョウホウセキュリティースイシンキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "中央区"
     },
     {
         "name": "一般社団法人ソフトウェア協会／イーテクノロジー株式会社",
         "url": "https://www.tokyo.linkstec.co.jp/",
         "kana": "イーテクノロジー",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "NPO法人シニアサロン井戸端会議",
@@ -851,7 +851,7 @@ const companyData = [
         "url": "https://www.qolhd.co.jp/",
         "kana": "クオールホールディングス",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "鳥取県南部町",
@@ -865,14 +865,14 @@ const companyData = [
         "url": "https://simple-alpha.com/",
         "kana": "ソエル",
         "prefecture": "東京都",
-        "district": null
+        "district": "渋谷区"
     },
     {
         "name": "全国電機商業組合連合会",
         "url": "https://www.zds.or.jp/",
         "kana": "ゼンコクデンキショウギョウクミアイレンゴウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "（木津川市社会福祉協議会）木津川市パソコンニューメディアサロン",
@@ -900,21 +900,21 @@ const companyData = [
         "url": "https://www.grafsec.or.jp/",
         "kana": "クサノネサイバーセキュリティスイシンキョウギカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "NPO法人IT整備士協会",
         "url": "https://www.it-seibishi.or.jp/",
         "kana": "アイティーセイビシキョウカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "港区"
     },
     {
         "name": "JCOM株式会社",
         "url": "https://www.jcom.co.jp/corporate/",
         "kana": "ジェイコム",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "近畿ケーブルネットワーク株式会社",
@@ -949,14 +949,14 @@ const companyData = [
         "url": "https://www.skf-field.co.jp/",
         "kana": "ソウケンフィールド",
         "prefecture": "東京都",
-        "district": null
+        "district": "品川区"
     },
     {
         "name": "株式会社T-NEX",
         "url": "http://www.t-nex.com",
         "kana": "ティーネックス",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "株式会社創和エンジニアリング",
@@ -1040,7 +1040,7 @@ const companyData = [
         "url": "https://nihonkeieishikai.com/",
         "kana": "ニホンケイエイシカイ",
         "prefecture": "東京都",
-        "district": null
+        "district": "千代田区"
     },
     {
         "name": "尾北シニアネット",
@@ -1089,7 +1089,7 @@ const companyData = [
         "url": "https://www.stm-systems.co.jp/",
         "kana": "システムズ",
         "prefecture": "東京都",
-        "district": null
+        "district": "品川区"
     },
     {
         "name": "神奈川県相模原市",
@@ -1110,7 +1110,7 @@ const companyData = [
         "url": "https://tonarino.org/",
         "kana": "トナリノ",
         "prefecture": "東京都",
-        "district": null
+        "district": "渋谷区"
     },
     {
         "name": "静岡県浜松市",
@@ -1138,7 +1138,7 @@ const companyData = [
         "url": "https://www.8emmy.com",
         "kana": "エイトエミー",
         "prefecture": "東京都",
-        "district": null
+        "district": "渋谷区"
     },
     {
         "name": "群馬県前橋市",
@@ -1173,7 +1173,7 @@ const companyData = [
         "url": "https://legacy.ne.jp/",
         "kana": "レガシィ",
         "prefecture": "東京都",
-        "district": null
+        "district": "中央区"
     },
     {
         "name": "鹿児島県志布志市",
