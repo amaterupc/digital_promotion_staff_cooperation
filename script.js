@@ -88,6 +88,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Helper function to extract district/city from organization name
+    function extractTokyoDistrict(name) {
+        // Match patterns like "渋谷区", "町田市", "東京都町田市", etc.
+        const match = name.match(/([\u4e00-\u9faf]+?[区市町村])/);
+        if (match) {
+            // If it's like "東京都町田市", extract just "町田市"
+            return match[1].replace(/^東京都/, '');
+        }
+        return null;
+    }
+
+    // Populate Tokyo sub-category (districts/cities)
+    function populateTokyoDistricts() {
+        // Clear existing options except the first one
+        while (subCategorySelect.options.length > 1) {
+            subCategorySelect.remove(1);
+        }
+
+        const tokyoCompanies = companies.filter(c => c.prefecture === '東京都');
+        const districts = new Set();
+
+        tokyoCompanies.forEach(company => {
+            const district = extractTokyoDistrict(company.name);
+            if (district) {
+                districts.add(district);
+            }
+        });
+
+        // Sort districts
+        const sortedDistricts = Array.from(districts).sort((a, b) => a.localeCompare(b, 'ja'));
+
+        sortedDistricts.forEach(district => {
+            const option = document.createElement('option');
+            option.value = district;
+            option.textContent = district;
+            subCategorySelect.appendChild(option);
+        });
+    }
+
     // Filter function
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
@@ -97,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show/Hide Sub-category select
         if (selectedPref === '東京都') {
             subCategorySelect.classList.remove('hidden');
+            // Populate districts on first show
+            if (subCategorySelect.options.length === 1) {
+                populateTokyoDistricts();
+            }
         } else {
             subCategorySelect.classList.add('hidden');
             subCategorySelect.value = ""; // Reset sub-category when not Tokyo
@@ -110,12 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let matchesSubCat = true;
             if (selectedPref === '東京都' && selectedSubCat !== '') {
-                const isMunicipality = company.name.startsWith('東京都');
-                if (selectedSubCat === 'municipality') {
-                    matchesSubCat = isMunicipality;
-                } else if (selectedSubCat === 'company') {
-                    matchesSubCat = !isMunicipality;
-                }
+                const district = extractTokyoDistrict(company.name);
+                matchesSubCat = district === selectedSubCat;
             }
 
             return matchesSearch && matchesPref && matchesSubCat;
