@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご協力いただいている企業・団体等の一覧 | デジタル庁</title>
+    <meta name="description" content="デジタル推進委員の取組にご協力いただいている企業・団体等の一覧です。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>ご協力いただいている企業・団体等の一覧</h1>
+            <p class="subtitle">デジタル推進委員の取組にご協力いただいている企業・団体等をご紹介します。</p>
+            <div class="disclaimer-alert">
+                <p>【ご注意】本ページは<a href="https://www.digital.go.jp/policies/digital_promotion_staff/cooperation"
+                        target="_blank"
+                        rel="noopener noreferrer">デジタル庁が公開している一覧ページ</a>をもとに作成した非公式のものです。<br>内容の正確性については保証いたしかねますので、ご利用の際は必ず元のページをご確認ください。
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="企業・団体名を検索..." aria-label="企業・団体名を検索">
+                <select id="prefectureSelect" aria-label="都道府県で絞り込み">
+                    <option value="">すべての都道府県</option>
+                    <!-- Options will be injected by JavaScript -->
+                </select>
+            </div>
+            <div id="cardGrid" class="card-grid">
+                <!-- Cards will be injected here by JavaScript -->
+            </div>
+            <div id="noResults" class="no-results hidden">
+                <p>該当する企業・団体が見つかりませんでした。</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Digital Agency Cooperation List Demo</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
