@@ -88,17 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Helper function to extract district/city from organization name
-    function extractTokyoDistrict(name) {
-        // Match patterns like "渋谷区", "町田市", "東京都町田市", etc.
-        const match = name.match(/([\u4e00-\u9faf]+?[区市町村])/);
-        if (match) {
-            // If it's like "東京都町田市", extract just "町田市"
-            return match[1].replace(/^東京都/, '');
-        }
-        return null;
-    }
-
     // Populate Tokyo sub-category (districts/cities)
     function populateTokyoDistricts() {
         // Clear existing options except the first one
@@ -110,9 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const districts = new Set();
 
         tokyoCompanies.forEach(company => {
-            const district = extractTokyoDistrict(company.name);
-            if (district) {
-                districts.add(district);
+            if (company.district) {
+                districts.add(company.district);
             }
         });
 
@@ -153,8 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let matchesSubCat = true;
             if (selectedPref === '東京都' && selectedSubCat !== '') {
-                const district = extractTokyoDistrict(company.name);
-                matchesSubCat = district === selectedSubCat;
+                matchesSubCat = company.district === selectedSubCat;
             }
 
             return matchesSearch && matchesPref && matchesSubCat;
